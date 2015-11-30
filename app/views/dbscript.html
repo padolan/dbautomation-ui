@@ -1,0 +1,16 @@
+<body ng-app="myApp" ng-controller="dbscriptController">
+  <table class="table table-condensed">
+   <thead>
+	  <tr>
+		<th>id</th>
+		<th>sql</th>
+	  </tr>
+	</thead>
+    <tbody>
+      <tr ng-repeat="changelog in dbscript.changelogs">
+        <td>{{changelog.id}}</td>
+        <td>{{changelog.changes[0].sql}}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>

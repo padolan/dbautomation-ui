@@ -1,0 +1,13 @@
+<body ng-app="myApp" ng-controller="dbscriptsController">
+  <table class="table table-striped">
+    <thead>
+      <tr><th colspan="2">Current Products</th></tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="product in productList">
+        <td><a href="#/dbscripts/{{product.id}}">{{product.id}}</a></td>
+        <td>{{product.name}}</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
