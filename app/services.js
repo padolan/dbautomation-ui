@@ -3,7 +3,10 @@ angular.module('myApp.services', [])
 
     var dbautomationApi = {};
 
-	dbautomationApi.authenticate = function(userid,passwd) {
+	dbautomationApi.signin = function(userid,passwd) {
+	}
+
+	dbautomationApi.signout = function() {
 	}
 
     dbautomationApi.getProductList = function() {

@@ -10,6 +10,7 @@ angular.module('myApp', [
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider
   	.when("/login", {templateUrl: "views/login.html", controller: "loginController"})
+  	.when("/logout", {templateUrl: "views/logout.html", controller: "logoutController"})
   	.when("/dbscripts", {templateUrl: "views/dbscripts.html", controller: "dbscriptsController"})
   	.when("/dbscripts/:id", {templateUrl: "views/dbscript.html", controller: "dbscriptController"})
   	.otherwise({redirectTo: '/login'});
