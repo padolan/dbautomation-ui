@@ -1,12 +1,12 @@
 
-<div ng-hide="authenticated">
+<div ng-hide="authentication.authenticated">
 	<label for="usermail">Email</label>
 	<input type="email" name="usermail" placeholder="yourname@email.com" ng-model="userid" required/>
 	<label for="password">Password</label>
 	<input type="password" name="password" placeholder="password" ng-model="password" required/>
 	<button class="btn btn-sm btn-primary" ng-click="doAuthenticate(userid,password)">Sign in</button>
 </div>
-<div ng-show="authenticated">
-	user {{userid}} is logged in.
+<div ng-show="authentication.authenticated">
+	user {{authentication.userid}} is logged in.
 	<button class="btn btn-sm btn-primary" ng-click="logout()">Sign out</button>
 </div>

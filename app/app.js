@@ -16,7 +16,9 @@ angular.module('myApp', [
 }])
 .run(function($rootScope) {
 	//alert('initialized');
-    $rootScope.authenticated = false;
-    $rootScope.userid = null;
+	$rootScope.authentication = {
+		"authenticated":false,
+		"userid": null
+	};
 })
 ;

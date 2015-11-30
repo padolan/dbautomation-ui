@@ -10,16 +10,15 @@ angular.module('myApp.controllers',[])
 
   .controller('loginController', function($rootScope, $scope, dbautomationSvcs) {
 	//alert('loginController');
-	$scope.userid=null;
-	$scope.password=null;
 	$scope.doAuthenticate = function(userid, password) {
 		alert('user: ' + userid + ', passwd: ' + password + ' signed in.');
-		$rootScope.authenticated=true;
-		$rootScope.userid = userid;
+		$rootScope.authentication.authenticated = true;
+		$rootScope.authentication.userid = userid;
+
 	}
 	$scope.logout = function() {
-		$rootScope.authenticated=false;
-		$rootScope.userid = null;
+		$rootScope.authentication.authenticated = false;
+		$rootScope.authentication.userid = null;
 	}
   })
 
